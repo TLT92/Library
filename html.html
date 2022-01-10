@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <button id="addBook">Click to add a book to the library</button>
+
+  <form id="bookInfo">
+    <label for="bookTitle">Title</label><br>
+    <input type="text" id="bookTitle" name="title"><br>
+    <label for="bookAuthor">Author</label><br>
+    <input type="text" id="bookAuthor" name="author"><br>
+    <label for="bookPages">Number of pages</label><br>
+    <input type="number" id="bookPages" name="pages"><br>
+    <p>Have you read the book?</p>
+    <label for="Read">Yes</label>
+    <input type="radio" id="read" name="bookStatus" value="Read"><br>
+    <label for="Not read">No</label>
+    <input type="radio" id="notRead" name="bookStatus" value="Not Read"><br>
+    <input type="submit" id="addBookButton" value="Click here to add book">
+  </form>
+
+  <div id="bookDisplay">
+  </div>
+</body>
+</html>

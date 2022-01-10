@@ -1,0 +1,7 @@
+#bookInfo {
+    display: none;
+};
+
+#bookDisplay {
+    display: flex;
+}
