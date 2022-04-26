@@ -43,6 +43,7 @@ function displayBooks() {
 	readToggleButton.textContent = "Change Status";
 	para.appendChild(removeButton);
 	para.appendChild(readToggleButton);
+
 	for (var property in myLibrary[x]) {
     	const node = document.createTextNode(`${property}: ${myLibrary[x][property]}`);
 		para.appendChild(node);
@@ -50,7 +51,19 @@ function displayBooks() {
 		element.appendChild(para);
 	  }
 	}
+
+	let bookTable = document.createElement("table");
+	let bookTableDiv = document.getElementById("bookDisplay");
+	bookTableDiv.appendChild(bookTable);
+	let newRow = bookTable.insertRow();
+	newRow.style.height = "200px";
+	newRow.style.width = "200px";
+	let newCell = newRow.insertCell(0)
+	newCell.style.backgroundColor = "green";
+	let newText = document.createTextNode('New bottom row');
+  	newCell.appendChild(newText);
 }
+
 document.getElementById("addBook").addEventListener("click", function() {
 	document.getElementById("bookInfo").style.display = "block";
 });
